@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="okj.petrik.miki_proba.animations.MainActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:id="@+id/linearLayout"
+    android:layout_centerHorizontal="true"
+    >
+
+    <ImageView
+        android:id="@+id/img_formation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/img_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_anim" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutButtonFirstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp">
+
+        <Button
+            android:id="@+id/btn_fade_in"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Előjön" />
+
+        <Button
+            android:id="@+id/btn_fade_out"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eltűnik" />
+
+        <Button
+            android:id="@+id/btn_bounce"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pattog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutButtonSecondLine"
+        android:layout_below="@+id/linearLayoutButtonFirstLine"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:text="Közelítés"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_zoom_in"
+            style="@style/ButtonStyle"
+            />
+
+        <Button
+            android:text="Távolodás"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_zoom_out"
+            style="@style/ButtonStyle"
+            />
+
+        <Button
+            android:text="Forgatás"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_rotate"
+            style="@style/ButtonStyle"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:text="Start Animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_animation"
+        style="@style/ButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp" />
+
+</RelativeLayout>
